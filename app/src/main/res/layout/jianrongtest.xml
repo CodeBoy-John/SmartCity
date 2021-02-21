@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 左上角 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/NULL_USE"
+            android:text="1111111111111"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_up"
+            android:text="北"
+            android:layout_toRightOf="@+id/NULL_USE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_center"
+            android:text="中"
+            android:layout_below="@+id/btn_up"
+            android:layout_alignLeft="@+id/btn_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_left"
+            android:text="西"
+            android:layout_toLeftOf="@+id/btn_center"
+            android:layout_alignTop="@+id/btn_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_right"
+            android:text="东"
+            android:layout_toRightOf="@+id/btn_center"
+            android:layout_alignTop="@+id/btn_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_down"
+            android:text="南"
+            android:layout_below="@+id/btn_center"
+            android:layout_alignLeft="@+id/btn_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
